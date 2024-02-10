@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script type="text/javascript">
+
+        // simpal function
+        // TNRN
+
+
+        function swap() {
+            var a = parseInt(prompt("Enter value A:- "));
+            var b = parseInt(prompt("Enter value B:- "));
+            var c;
+            c = a;
+            a = b;
+            b = c;
+
+            document.write(`<h2> swapping value of A : ${a}`);
+            document.write(`<h2> swapping value of B : ${b}`);
+        }
+        swap();
+
+        //    TNRS
+
+        function swap(a, b) {
+            var a = parseInt(prompt("Enter value A:- "));
+            var b = parseInt(prompt("Enter value B:- "));
+            var c;
+            c = a;
+            a = b;
+            b = c;
+
+            document.write(`<h2> swapping value of A : ${a}`);
+            document.write(`<h2> swapping value of B : ${b}`);
+            return a, b;
+        }
+
+        swap();
+
+        //using no return with parameter function
+        // TSRN
+
+        function swap(a, b) {
+
+            var c;
+            c = a;
+            a = b;
+            b = c;
+
+            document.write(`<h2> swapping value of A : ${a}`);
+            document.write(`<h2> swapping value of B : ${b}`);
+        }
+        var x = parseInt(prompt("Enter value A:- "));
+        var y = parseInt(prompt("Enter value B:- "));
+
+        swap(x, y);
+
+        // TSRS
+
+        function swap(a, b) {
+
+            var c;
+            c = a;
+            a = b;
+            b = c;
+
+            document.write(`<h2> swapping value of A : ${a}`);
+            document.write(`<h2> swapping value of B : ${b}`);
+            return a, b;
+
+        }
+        var x = parseInt(prompt("Enter value A:- "));
+        var y = parseInt(prompt("Enter value B:- "));
+
+        swap(x, y);
+
+
+    </script>
+</body>
+
+</html>

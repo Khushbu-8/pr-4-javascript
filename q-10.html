@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script type="text/javascript">
+
+        // simpal function
+
+
+       // TNRN
+   function voteElg() {
+        var a = parseInt(prompt("Enter your age : "));
+
+        if (a >= 18 && a <= 100) {
+            document.write(`<h2>Your age is ${a}. Are you elagible for votting...</h2>`);
+        } else if (a < 18) {
+            document.write(`<h2>Your age is ${a}. Are you not elagible for votting...</h2>`);
+        } else if (a > 100) {
+            document.write(`<h2>Your age is ${a}. Enter valide age...</h2>`);
+        }
+    }      
+    voteElg();
+
+    // TNRS
+    function voteElg() {
+        var a = parseInt(prompt("Enter your age : "));
+        if (a >= 18 && a <= 100) {
+            return 1;
+        } else if (a < 18) {
+            return 2;
+        } else if (a > 100) {
+            return 3;
+        }
+    }
+    var vote = voteElg();
+    if (vote == 1) {
+        document.write(`<h2>Are you elagible for votting...</h2>`);
+    } else if (vote == 2) {
+        document.write(`<h2>Are you not elagible for votting...</h2>`);
+    } else if (vote == 3) {
+        document.write(`<h2>Enter valide age...</h2>`);
+    }
+
+
+    // TSRN
+  
+    function voteElg(a) {
+        if (a >= 18 && a <= 100) {
+            document.write(`<h2>Your age is ${a}. Are you elagible for votting...</h2>`);
+        } else if (a < 18) {
+            document.write(`<h2>Your age is ${a}. Are you not elagible for votting...</h2>`)
+        } else if (a > 100) {
+            document.write(`<h2>Your age is ${a}. Enter valide age...</h2>`);
+        }
+    }
+    var a = parseInt(prompt("Enter your age : "));
+    voteElg(a);
+
+
+    // TSRS
+   
+    function voteElg(a) {
+        if (a >= 18 && a <= 100) {
+            return 1;
+        } else if (a < 18) {
+            return 2;
+        } else if (a > 100) {
+            return 3;
+        }
+    }
+    var a = parseInt(prompt("Enter your age : "));
+    var vote = voteElg(a);
+    if (vote == 1) {
+        document.write(`<h2>Are you elagible for votting...</h2>`);
+    } else if (vote == 2) {
+        document.write(`<h2>Are you not elagible for votting...</h2>`);
+    } else if (vote == 3) {
+        document.write(`<h2>Enter valide age...</h2>`);
+    }
+
+
+
+    </script>
+</body>
+</html>

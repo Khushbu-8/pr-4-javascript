@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script type="text/javascript">
+       function greterNO(){
+        var a = parseInt(prompt("Enter first no :"));
+        var b= parseInt(prompt("Enter second no :"));
+        var c = parseInt(prompt("Enter third no :"));
+        var d = parseInt(prompt("Enter forth no :"));
+        
+            if(a>b){
+                if(a>c){
+                    if(a>d){
+                        document.write(`<h2> a is max...</h2>`);
+                    }else{
+                        document.write(`<h2> d is max...</h2>`);
+                    }
+
+                }else{
+                    document.write(`<h2> c is max...</h2>`);
+                }
+
+            }else if(b>c){
+                if(b>d){
+                    document.write(`<h2> b is max...</h2>`);
+                }else{
+                    document.write(`<h2> d is max...</h2>`);
+                }
+            }else if(c>d){
+                document.write(`<h2> c is max...</h2>`);
+            }else{
+                document.write(`<h2> d is max...</h2>`);
+            }
+        
+
+       }
+
+       greterNO();
+       
+
+    </script>
+</body>
+</html>
